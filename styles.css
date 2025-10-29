@@ -1,0 +1,213 @@
+/* Simplistic and Modern Font & Background */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; /* Light, calming blue-grey */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d80; /* Deep blue, maritime feel */
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #004d80;
+    border-bottom: 3px solid #004d80;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* Search Bar Styling */
+.search-container {
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Cadet Grid and Card Styling */
+.cadet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cadet-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cadet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cadet-card h3 {
+    color: #c0392b; /* Red accent for the name */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cadet-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.cadet-card strong {
+    color: #004d80;
+}
+
+/* Specific styling for the 'Roll Bhai' List */
+#roll-bhai-section h2 {
+    color: #27ae60; /* Green accent for 'Roll Bhai' */
+    border-bottom-color: #27ae60;
+}
+
+#rollBhaiList {
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    min-height: 50px;
+    background-color: #f9fffb;
+}
+
+.roll-bhai-group {
+    margin-top: 15px;
+}
+
+.roll-bhai-group h4 {
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.roll-bhai-group span {
+    display: inline-block;
+    background-color: #e6f0ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 0.9em;
+    border: 1px solid #c2d9ff;
+}
+
+/* Roll Baap Section Styling */
+#roll-baap-section h2 {
+    color: #e67e22; /* Orange/Gold accent for 'Roll Baap' */
+    border-bottom-color: #e67e22;
+}
+
+#rollBaapDropdown {
+    padding: 10px;
+    border: 1px dashed #e67e22;
+    border-radius: 5px;
+    min-height: 50px;
+    background-color: #fff8f2; /* Light orange background */
+}
+
+.roll-baap-batch {
+    margin: 15px 0;
+    padding: 10px;
+    border-top: 1px solid #f0e0d1;
+}
+
+.roll-baap-batch h5 {
+    color: #d35400; /* Darker orange for batch name */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.roll-baap-batch span {
+    display: inline-block;
+    background-color: #f7e2d3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 0.9em;
+    border: 1px solid #e67e22;
+}
+
+/* Summary Data Styling */
+#summary-data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #004d80;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 150px;
+    background-color: #e6f0ff;
+}
+
+.summary-item h4 {
+    margin: 0;
+    font-size: 2em;
+    color: #004d80;
+}
+
+.summary-item p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}

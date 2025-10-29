@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMU Kolkata - B.Tech (ME) 2025 Batch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>⚓ IMU Kolkata - B.Tech (ME) 2025 Batch (Cadet List)</h1>
+        <p>A highly interactive directory for the 1st Semester, B.Tech (ME) 2025 Entry Batch.</p>
+    </header>
+
+    <div class="container">
+        <section id="summary-section">
+            <h2>📊 Batch Summary</h2>
+            <div id="summary-data">
+                </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by Name, Roll No., or Regd. No. (e.g., AADARSH, 10391, 2501608001)">
+            </div>
+        </section>
+
+        <section id="roll-bhai-section">
+            <h2>🤝 Roll Bhai List (Same Last 2 Digits of Roll No.)</h2>
+            <div id="rollBhaiList">
+                <p>Click on any cadet's card to find their **Roll Bhai** (same batch peers).</p>
+            </div>
+        </section>
+        
+        <section id="roll-baap-section">
+            <h2>👑 Roll Baap (Senior Match)</h2>
+            <div id="rollBaapDropdown">
+                <p>Click on any cadet's card to find their **Roll Baap** (seniors from 2022-26, 2023-27, and 2024-28 batches with the same roll number ending).</p>
+            </div>
+        </section>
+        <section id="cadets-section">
+            <h2>🧑‍🎓 Cadet Directory (Total: <span id="cadetCount"></span>)</h2>
+            <div id="cadetsContainer" class="cadet-grid">
+                </div>
+            <div id="noResults" style="display: none; text-align: center; margin-top: 20px;">
+                No cadets found matching your search criteria.
+            </div>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
